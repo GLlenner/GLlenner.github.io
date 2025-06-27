@@ -1,0 +1,11 @@
+<div class="blog-list">
+  {% for post in site.posts %}
+    <div class="blog-card">
+      <a href="{{ post.url | relative_url }}">
+        <h3 class="blog-title">{{ post.title }}</h3>
+        <p class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+        <div class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
