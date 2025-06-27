@@ -1,36 +1,32 @@
+---
+---
+@import "portfolYOU";
+
+/* 覆盖博客列表布局为条状排列 */
 .blog-list {
-  list-style: none;
-  padding: 0;
+  display: block !important; /* 取消主题可能的 flex 或 grid */
   margin: 2rem 0;
 }
 
-.blog-item {
-  border-bottom: 1px solid #ddd;
-  padding: 0.8rem 0;
+.blog-card {
+  border: none !important;  /* 取消块状边框 */
+  box-shadow: none !important; /* 取消阴影 */
+  padding: 0.5rem 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  transform: none !important;
 }
 
-.blog-item a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.blog-card + .blog-card {
+  border-top: 1px solid #ddd !important; /* 用线条分隔文章 */
 }
 
 .blog-title {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #222;
+  color: inherit !important; /* 保持原色 */
 }
 
-.blog-excerpt {
-  margin: 0.3rem 0 0;
-  color: #555;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-.blog-date {
-  font-size: 0.85rem;
-  color: #999;
-  display: block;
-  margin-top: 0.3rem;
+.blog-card a {
+  color: inherit !important;
+  text-decoration: none !important;
 }
