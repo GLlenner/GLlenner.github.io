@@ -1,0 +1,25 @@
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 0;
+}
+
+.blog-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.blog-item p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.blog-item small {
+  color: #888;
+}
